@@ -47,4 +47,5 @@ I love programming
 ";
 echo $longText2.'<br>';
 echo htmlentities($longText2).'<br>';//print html tags as they are
+echo nl2br(htmlentities($longText2)).'<br>';//print html tags as they are, add new lines
 ?>
