@@ -32,9 +32,19 @@ echo "16- " . str_ireplace('world', 'PHP',$string) . '<br>';//replace the first 
 //Multiline text and line breaks
 $longText = "
 Hello, my name is Fatoom 
-I am a engineer,
+I am an engineer,
 I love programming
 ";
 echo $longText.'<br>';//ignore new lines
 echo nl2br($longText);//convert new line to html <br> tag
+
+/****************************/
+//Multiline text and reserve html tags
+$longText2 = "
+Hello, my name is <b>Fatoom</b>
+I am an <b>engineer</b>,
+I love programming
+";
+echo $longText2.'<br>';
+echo htmlentities($longText2).'<br>';//print html tags as they are
 ?>
