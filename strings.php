@@ -27,4 +27,14 @@ echo "13- " . stripos($string, 'world') . '<br>';//return the position of the fi
 echo "14- " . substr($string, 8) . '<br>';//suib string of string starting from position 8 until the end
 echo "15- " . str_replace('World', 'PHP',$string) . '<br>';//replace the first args with the second 
 echo "16- " . str_ireplace('world', 'PHP',$string) . '<br>';//replace the first args with the second ignore case
+
+/****************************/
+//Multiline text and line breaks
+$longText = "
+Hello, my name is Fatoom 
+I am a engineer,
+I love programming
+";
+echo $longText.'<br>';//ignore new lines
+echo nl2br($longText);//convert new line to html <br> tag
 ?>
