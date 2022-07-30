@@ -19,7 +19,7 @@ for ($i = 0 ; $i < $age; $i++) {
 /******************* */
 //foreach
 $vegetables = ["Tomato", "Onion", "Potato", "Pepper"];
-foreach($vegetables as $v) {
-    echo $v.'<br>';
+foreach($vegetables as $i=>$v) {
+    echo $i.'- '. $v.'<br>';
 }
 ?>
