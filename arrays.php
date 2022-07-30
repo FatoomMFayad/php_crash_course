@@ -15,4 +15,14 @@ $fruits[3] = 'Peach';
 echo '<pre>';
 var_dump($fruits);
 echo '</pre>';
+/******************************/
+//Check if array has element at specific index
+echo isset($fruits[4]).'<br>';//false
+echo isset($fruits[1]).'<br>';//true
+/******************************/
+//Append element
+$fruits[] = 'Banana';   
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
 ?>
