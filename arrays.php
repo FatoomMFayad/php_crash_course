@@ -25,4 +25,19 @@ $fruits[] = 'Banana';
 echo '<pre>';
 var_dump($fruits);
 echo '</pre>';
+/******************************/
+//Print the length of the array
+echo count($fruits).'<br>';
+/******************************/
+//Add element at the end of the array
+array_push($fruits, 'dummy');
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
+/******************************/
+//Remove element from the end of the array
+array_pop($fruits);
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
 ?>
