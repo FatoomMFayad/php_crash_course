@@ -40,4 +40,16 @@ array_pop($fruits);
 echo '<pre>';
 var_dump($fruits);
 echo '</pre>';
+/******************************/
+//Add element at the beginning of the array
+array_unshift($fruits, 'Grapes');
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
+/******************************/
+//Remove element from the beginning of the array
+array_shift($fruits);
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
 ?>
