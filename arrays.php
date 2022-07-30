@@ -61,4 +61,52 @@ echo '</pre>';
 /******************************/
 //Combine array elements into string
 echo implode(", ", $fruits).'<br>';
+/******************************/
+//Check if element exists in array
+echo '<pre>';
+var_dump(in_array('Apple', $fruits));
+echo '</pre>';
+/******************************/
+//Search element index in array
+echo '<pre>';
+var_dump(array_search('Melon', $fruits));//returns false if not exists and the index if exists
+echo '</pre>';
+/******************************/
+//Merge two arrays
+$colors =['Blue', 'Red', 'Yellow'];
+echo '<pre>';
+var_dump(array_merge($fruits, $colors));
+echo '</pre>';
+/******************************/
+//Merge two arrays using spread operator
+$colors =['Blue', 'Red', 'Yellow'];
+echo '<pre>';
+var_dump([...$fruits, ...$colors]);
+echo '</pre>';
+/***********************/
+//Sorting array
+sort($fruits);
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
+/***********************/
+//Sorting array desc
+rsort($fruits);
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
+/***********************/
+//Associative array : key-value pairs
+$person = [
+    'name' => 'Ola',
+    'suname' => 'Ali',
+    'Age' => 18,
+    'Skills'=> ['SQL', 'PHP','JS'],
+];
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
+/************************/
+//Get element by key
+echo $person['name'];
 ?>
