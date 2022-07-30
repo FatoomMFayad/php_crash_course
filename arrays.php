@@ -52,4 +52,10 @@ array_shift($fruits);
 echo '<pre>';
 var_dump($fruits);
 echo '</pre>';
+/******************************/
+//Split the string into array
+$myStr = "Banana, Apple, Orange";
+echo '<pre>';
+var_dump(explode(',', $myStr));
+echo '</pre>';
 ?>
