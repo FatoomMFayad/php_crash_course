@@ -58,4 +58,7 @@ $myStr = "Banana, Apple, Orange";
 echo '<pre>';
 var_dump(explode(',', $myStr));
 echo '</pre>';
+/******************************/
+//Combine array elements into string
+echo implode(", ", $fruits).'<br>';
 ?>
