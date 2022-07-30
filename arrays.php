@@ -108,5 +108,37 @@ var_dump($person);
 echo '</pre>';
 /************************/
 //Get element by key
-echo $person['name'];
+echo $person['name'].'<br>';
+/************************/
+//Set element by key
+$person['job'] = 'Software Engineer';
+echo $person['job'].'<br>';
+/************************/
+//Null coalescing assignment operator
+$person['address']??='Gaza'; // if the key is not set, give it Gaza value
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
+/******************************/
+//print array keys
+echo '<pre>';
+var_dump(array_keys($person));
+echo '</pre>';
+/******************************/
+//print array values
+echo '<pre>';
+var_dump(array_values($person));
+echo '</pre>';
+/******************************/
+//sorting  associative arrays by key
+ksort($person);
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
+/******************************/
+//sorting  associative arrays by value
+asort($person);
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
 ?>
