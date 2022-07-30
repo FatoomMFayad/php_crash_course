@@ -40,5 +40,20 @@ echo '</pre>';
 //Null coalescing operator
 $myName = $name ?? "Fatoom";
 echo $myName . "<br>";
-
+//***************************************/
+//Switch
+$userRole = 'admin'; //editor, user, admin
+switch($userRole) {
+    case 'admin' :
+        echo 'admin'.'<br>';
+        break;
+    case 'editor' : 
+        echo 'editor'.'<br>';
+        break;
+    case 'user' : 
+        echo 'user'.'<br>';
+        break;
+    default:
+        echo 'Invalid role';
+    }
 ?>
