@@ -141,4 +141,14 @@ asort($person);
 echo '<pre>';
 var_dump($person);
 echo '</pre>';
+/******************************/
+//Two dimensional arrays
+$tasks = [
+    ['title'=>'Wake up', 'compeleted'=>true],
+    ['title'=>'Go to work', 'compeleted'=>true],
+    ['title'=>'Back Home', 'compeleted'=>false],
+];
+echo '<pre>';
+var_dump($tasks[0]['title']);
+echo '</pre>';
 ?>
